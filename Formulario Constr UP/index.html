@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>a listagem de materiais de construção</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1>Cadastrar materiais de construção no sistema</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="name">Nome</label>
+        <input type="name" name="name" id="name" placeholder="Digite nome do produto" data-min-length="2" data-email-validate>
+      </div>
+      <div class="half-box spacing">
+          <label for="descricao">Descrição</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Digite Descrição" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box spacing">
+          <label for="descricao">marca</label>
+          <input type="text" name="descricao" id="descricao" placeholder="Digite Marca" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box spacing">
+          <label for="descricao">Quantidade</label>
+          <input type="number" min="1"max"1000" name="quantidade" id="quantidade" placeholder=  data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box spacing">
+          <label for="mercadoriaId">ID</label>
+          <input type="number" min="1"max"1000" name="mercadoriaId" id="mercadoriaId" placeholder=  data-required data-min-length="3" data-max-length="16">
+      </div>
+
+     
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
